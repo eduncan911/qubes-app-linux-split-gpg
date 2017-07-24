@@ -88,8 +88,8 @@ int prepare_pipes_and_run(const char *run_file, char **run_argv, int *input_fds,
 			  int output_fds_count);
 
 static const int gpg_allowed_options[] = {
-	'b',
 	'a',
+	'b',
 	'c',
 	'd',
 	'e',
@@ -164,7 +164,7 @@ static const int gpg_allowed_options[] = {
 	0
 };
 
-static const char gpg_short_options[] = "bacdekKnr:stu:";
+static const char gpg_short_options[] = "abcdekKnrR:stu:";
 
 static const struct option gpg_long_options[] = {
 	{"always-trust", 0, 0, opt_always_trust},
